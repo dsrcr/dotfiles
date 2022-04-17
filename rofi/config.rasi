@@ -1,0 +1,13 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    drun-display-format: "{icon} {name}";
+    font: "FiraCode NF Regular 10";
+  }
+
+listview {
+    columns: 1;
+    lines: 6;
+  }
