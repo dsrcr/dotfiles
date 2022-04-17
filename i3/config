@@ -7,7 +7,7 @@
 #
 # Minimalistic custom i3-gaps config
 # Trying to keep it simple, as always....
-# https://github.com/dsorcererdev/configfiles  
+# https://github.com/dsorcererdev/dotfiles  
 
 # Default modifier as Super key
 set $super Mod4
@@ -59,15 +59,8 @@ bindsym $super+semicolon split h
 bindsym $super+v split v
 bindsym $super+f fullscreen toggle
 
-# Keybints: Workspaces
+# Keybinds: Workspaces
 bindsym $super+1 workspace $workspace1
 bindsym $super+2 workspace $workspace2
 bindsym $super+3 workspace $workspace3
 bindsym $super+4 workspace $workspace4
-
-# Bar configuration (I'm using the bumblebee-status bar with grubbox-powerline theme)
-#bar {
-#	position top
-#  status_command ~/.config/bumblebee-status/bumblebee-status -t gruvbox-powerline -m cpu memory disk datetime xrandr amixer pasink battery 
-#  tray_output  LVDS-1
-#}
