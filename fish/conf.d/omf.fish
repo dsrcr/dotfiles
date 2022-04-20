@@ -6,7 +6,7 @@
 #         \/         \/      \/             \/                      
 # Custom minimalistic fish(oh-my-fish) config
 # Trying to keep it simple, as always...
-# https://github.com/dsorcererdev/configfiles  
+# https://github.com/dsorcererdev/dotfiles  
 
 # Variables
 set EDITOR 'nvim'
