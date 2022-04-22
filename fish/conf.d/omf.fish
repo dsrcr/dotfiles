@@ -24,6 +24,18 @@ alias ls='lsd -l'
 alias vim='nvim'
 alias ra='ranger'
 
-# Aliases: commands
+# Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/.config/i3/config"
 alias editfish="$EDITOR ~/.config/fish/conf.d/omf.fish"
+
+# Aliases: Arduino development
+alias acl='sudo arduino-cli'
+alias aclcompile='sudo arduino-cli compile --fqbn arduino:avr:uno'
+alias aclupload='sudo arduino-cli upload --port /dev/ttyACM0 --fqbn arduino:avr:uno'
+
+# Aliases: Git
+alias gts='git status'
+alias gtc='git commit -m'
+alias gpo='git push origin'
+alias gpl='git pull'
+alias gta='git add'
