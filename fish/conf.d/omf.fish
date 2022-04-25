@@ -17,7 +17,7 @@ set -q XDG_DATA_HOME and set -gx OMF_PATH '$XDG_DATA_HOME/omf' or set -gx OMF_PA
 # Load Oh My Fish configuration.
 source $OMF_PATH/init.fish
 
-# Aliases: speeding up cd, switching ls to lsd, switching vim to LunarVim
+# Aliases: speeding up cd, switching ls to lsd,
 alias ..='cd ..'
 alias ...='cd ../..'
 alias l='lsd -l'
@@ -34,6 +34,7 @@ alias editfish="$EDITOR ~/.config/fish/conf.d/omf.fish"
 alias acl='sudo arduino-cli'
 alias aclcompile='sudo arduino-cli compile --fqbn arduino:avr:uno'
 alias aclupload='sudo arduino-cli upload --port /dev/ttyACM0 --fqbn arduino:avr:uno'
+alias aserial='sudo screen /dev/ttyACM0'
 
 # Aliases: Git
 alias gts='git status'
