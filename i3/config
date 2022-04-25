@@ -33,6 +33,7 @@ exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/wallpaper
 # Keybinds: Terminal based
 bindsym $super+Return exec --no-startup-id $terminal
 bindsym $super+Shift+Return exec --no-startup-id $terminal ranger
+bindsym $super+Shift+t exec --no-startup-id $terminal nvim ~/repos/token.md
 
 # Keybinds: GUI
 bindsym $super+Shift+s exec --no-startup-id flameshot gui

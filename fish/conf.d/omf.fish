@@ -20,9 +20,11 @@ source $OMF_PATH/init.fish
 # Aliases: speeding up cd, switching ls to lsd, switching vim to LunarVim
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ls='lsd -l'
-alias vim='nvim'
-alias ra='ranger'
+alias l='lsd -l'
+alias v='nvim'
+alias r='ranger'
+alias n='neofetch'
+alias c='clear'
 
 # Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/.config/i3/config"
