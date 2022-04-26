@@ -53,6 +53,7 @@ return packer.startup(function(use)
     use "folke/which-key.nvim"
 
     use "lunarvim/darkplus.nvim"
+    use "morhetz/gruvbox"
 
     use "hrsh7th/nvim-cmp"
     use "hrsh7th/cmp-buffer"

@@ -1,7 +1,7 @@
 vim.cmd [[
     try
-        colorscheme darkplus
-        highlight Normal guibg=None
+        colorscheme gruvbox 
+        highlight Normal guibg=None ctermbg=None
         highlight SignColumn guibg=None
         highlight Cmdline ctermbg=None guibg=None
         highlight TabLine ctermbg=None guibg=None

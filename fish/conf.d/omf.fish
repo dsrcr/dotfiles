@@ -27,8 +27,8 @@ alias n='neofetch'
 alias c='clear'
 
 # Aliases: Edit dotfiles
-alias editi3="$EDITOR ~/.config/i3/config"
-alias editfish="$EDITOR ~/.config/fish/conf.d/omf.fish"
+alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
+alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/omf.fish"
 
 # Aliases: Arduino development
 alias acl='sudo arduino-cli'
