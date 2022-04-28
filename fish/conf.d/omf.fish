@@ -25,6 +25,9 @@ alias v='nvim'
 alias r='ranger'
 alias n='neofetch'
 alias c='clear'
+alias update='sudo paru'
+alias install='sudo paru -S'
+alias remove='sudo paru --remove'
 
 # Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
@@ -42,3 +45,7 @@ alias gtc='git commit -m'
 alias gpo='git push origin'
 alias gpl='git pull'
 alias gta='git add'
+alias arduino='sudo arduino'
+
+alias octave='sudo octave --gui'
+
