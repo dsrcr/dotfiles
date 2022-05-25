@@ -15,14 +15,7 @@ set $super Mod4
 # Default terminal emulator FOR I3 KEYBINDS
 set $terminal LIBGL_ALWAYS_SOFTWARE=1 kitty
 
-# Setting up workspace names as NerdFont glyphs
-set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
-set $workspace4 "ﭮ"
-
 # Basic settings: font, disabling i3 window top bar, gaps size
-font pango:FiraCode NF Regular 9
 default_border pixel 0
 gaps inner 20
 
