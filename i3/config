@@ -23,7 +23,7 @@ set $workspace4 "ﭮ"
 
 # Basic settings: font, disabling i3 window top bar, gaps size
 font pango:FiraCode NF Regular 9
-default_border pixel 1
+default_border pixel 0
 gaps inner 20
 
 # Startup apps: compositor and wallpaper
