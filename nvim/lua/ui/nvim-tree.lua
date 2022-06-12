@@ -1,4 +1,4 @@
-vim.g.nvim_tree_icons = {
+nvim_tree_icons = {
     default = "",
     symlink = "",
     git = {
