@@ -13,6 +13,8 @@
 set $super Mod4
 
 # Default terminal emulator FOR I3 KEYBINDS
+set $terminal kitty
+# Only for older hardware
 set $terminal LIBGL_ALWAYS_SOFTWARE=1 kitty
 
 # Basic settings: font, disabling i3 window top bar, gaps size
