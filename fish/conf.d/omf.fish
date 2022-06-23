@@ -21,6 +21,7 @@ source $OMF_PATH/init.fish
 alias ..='cd ..'
 alias ...='cd ../..'
 alias l='lsd -l'
+alias ls='lsd -l'
 alias v='nvim'
 alias r='ranger'
 alias n='neofetch'
@@ -46,6 +47,4 @@ alias gpo='git push origin'
 alias gpl='git pull'
 alias gta='git add'
 alias arduino='sudo arduino'
-
-alias octave='sudo octave --gui'
 
