@@ -29,6 +29,7 @@ alias c='clear'
 alias update='sudo paru'
 alias install='sudo paru -S'
 alias remove='sudo paru --remove'
+alias fixkeys='sudo pacman -Sy archlinux-keyring'
 
 # Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
