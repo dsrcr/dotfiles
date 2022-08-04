@@ -16,8 +16,6 @@ usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
 sysmodmap=/etc/X11/xinit/.Xmodmap
 
-xrandr --output VGA-1 --mode 1024x768 --rate 75 --left-of LVDS-1
-
 if [ -f $sysresources ]; then
     xrdb -merge $sysresources
 fi
