@@ -1,6 +1,6 @@
 vim.cmd [[
     try
-        colorscheme gruvbox 
+        colorscheme tokyonight 
         highlight Normal guibg=None ctermbg=None
         highlight SignColumn guibg=None ctermbg=None
         highlight Cmdline ctermbg=None guibg=None
