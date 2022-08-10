@@ -34,11 +34,6 @@ alias remove='sudo paru --remove'
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
 alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/omf.fish"
 
-# Aliases: Arduino development
-alias acl='sudo arduino-cli'
-alias aclcompile='sudo arduino-cli compile --fqbn arduino:avr:uno'
-alias aclupload='sudo arduino-cli upload --port /dev/ttyACM0 --fqbn arduino:avr:uno'
-alias aserial='sudo screen /dev/ttyACM0'
 
 # Aliases: Git
 alias gts='git status'
@@ -46,5 +41,4 @@ alias gtc='git commit -m'
 alias gpo='git push origin'
 alias gpl='git pull'
 alias gta='git add'
-alias arduino='sudo arduino'
 
