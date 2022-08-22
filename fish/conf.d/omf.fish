@@ -29,11 +29,21 @@ alias c='clear'
 alias update='sudo paru'
 alias install='sudo paru -S'
 alias remove='sudo paru --remove'
+alias fixkeys='sudo pacman -Sy archlinux-keyring'
 
 # Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
 alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/omf.fish"
 
+<<<<<<< HEAD
+=======
+# Aliases: Arduino development
+alias acl='sudo arduino-cli'
+alias aclcompile='sudo arduino-cli compile --fqbn arduino:avr:uno'
+alias aclupload='sudo arduino-cli upload --port /dev/ttyACM0 --fqbn arduino:avr:uno'
+alias aserial='sudo screen /dev/ttyACM0'
+alias arduino='sudo arduino'
+>>>>>>> 401c3954e6ec8f2410df8016f008b5b44b5e1ec0
 
 # Aliases: Git
 alias gts='git status'
@@ -41,4 +51,10 @@ alias gtc='git commit -m'
 alias gpo='git push origin'
 alias gpl='git pull'
 alias gta='git add'
+<<<<<<< HEAD
+=======
+
+# Aliases: Machile Learning
+alias octave='sudo octave --gui'
+>>>>>>> 401c3954e6ec8f2410df8016f008b5b44b5e1ec0
 
