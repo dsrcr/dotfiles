@@ -27,7 +27,7 @@ alias r='ranger'
 alias n='neofetch'
 alias c='clear'
 alias p='paru'
-alias i='sudo paru -S'
+alias i='paru -S'
 alias remove='sudo paru --remove'
 alias fixkeys='sudo pacman -Sy archlinux-keyring'
 
