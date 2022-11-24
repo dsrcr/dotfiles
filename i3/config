@@ -16,7 +16,8 @@ set $super Mod4
 set $terminal LIBGL_ALWAYS_SOFTWARE=1 kitty
 
 # Basic settings: font, disabling i3 window top bar, gaps size
-default_border pixel 0
+default_border pixel 1
+font pango:DejaVu Sans Mono 0
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/wallpaper
 exec --no-startup-id picom --config ~/repos/dotfiles/picom/picom.conf -b
 
