@@ -12,18 +12,14 @@
 # Default modifier as Super key
 set $super Mod4
 
-# Default terminal emulator FOR I3 KEYBINDS
-set $terminal kitty
 # Only for older hardware
 set $terminal LIBGL_ALWAYS_SOFTWARE=1 kitty
 
 # Basic settings: font, disabling i3 window top bar, gaps size
-default_border pixel 0
-gaps inner 20
-
-# Startup apps: compositor and wallpaper
-exec --no-startup-id picom -b
+default_border pixel 1
+font pango:DejaVu Sans Mono 0
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/wallpaper
+exec --no-startup-id picom --config ~/repos/dotfiles/picom/picom.conf -b
 
 # Keybinds: Terminal based
 bindsym $super+Return exec --no-startup-id $terminal
@@ -40,14 +36,6 @@ bindsym $super+Shift+f exec --no-startup-id ~/.config/rofi/rofi-shutdown-menu
 
 # Keybinds: Windows
 bindsym $super+q kill
-bindsym $super+j focus left
-bindsym $super+k focus down
-bindsym $super+l focus up
-bindsym $super+h focus right
-bindsym $super+Shift+h move right
-bindsym $super+Shift+j move left
-bindsym $super+Shift+k move down
-bindsym $super+Shift+l move up
 bindsym $super+Shift+r restart
 
 # Keybinds: Layout

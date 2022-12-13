@@ -28,6 +28,8 @@ local options = {
     wrap = false,
     scrolloff = 8,
     sidescrolloff = 8,
+    laststatus=0,
+    ruler=false
 }
 
 vim.opt.shortmess:append "c"

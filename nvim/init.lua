@@ -14,11 +14,10 @@
 -- This module stands for user interface
 -- Here you can configure basic vim settings, vim welcome page, etc.
 require "ui.options"
-require "ui.colorscheme"
 require "ui.gitsigns"
 require "ui.nvim-tree"
 require "ui.bufferline"
-require "ui.lualine"
+require "ui.colorscheme"
 require "ui.indentline"
 require "ui.alpha"
 require "ui.whichkey"
