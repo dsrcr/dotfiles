@@ -19,3 +19,8 @@ end
 starship init fish | source
 pfetch
 
+
+# pnpm
+set -gx PNPM_HOME "/home/ds/.local/share/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end

@@ -11,18 +11,12 @@
 # Variables
 set EDITOR 'nvim'
 
-# Path to Oh My Fish install.
-set -q XDG_DATA_HOME and set -gx OMF_PATH '$XDG_DATA_HOME/omf' or set -gx OMF_PATH '$HOME/.local/share/omf'
-
-# Load Oh My Fish configuration.
-source $OMF_PATH/init.fish
-
-# Aliases: speeding up cd, switching ls to lsd,
+# Aliases: speeding up cd, switching ls to exa,
 alias ..='cd ..'
 alias ...='cd ../..'
-alias l='exa -l'
-alias ls='exa -l'
-alias la='exa -la'
+alias l='exa -l --icons'
+alias ls='exa -l --icons'
+alias la='exa -la --icons'
 alias v='nvim'
 alias r='ranger'
 alias n='pfetch'
@@ -36,7 +30,7 @@ alias fixkeys='sudo pacman -Sy archlinux-keyring'
 
 # Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
-alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/omf.fish"
+alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/config.fish"
 
 # Aliases: Arduino development
 alias acl='sudo arduino-cli'
