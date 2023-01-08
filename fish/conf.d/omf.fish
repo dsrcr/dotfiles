@@ -55,3 +55,8 @@ alias gta='git add'
 # Aliases: Machile Learning
 alias octave='sudo octave --gui'
 
+# Aliases: JS
+
+alias lint='eslint .'
+alias fix='eslint --fix .'
+alias start='pnpm run start'
