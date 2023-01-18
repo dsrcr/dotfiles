@@ -4,9 +4,9 @@
 #  |    `   \ /        \\  \___(  <_> )|   |  \|  |   |  | \___  /  
 # /_______  //_______  / \___  >\____/ |___|  /|__|   |__|/_____/   
 #         \/         \/      \/             \/                      
-# Custom minimalistic fish(oh-my-fish) config
+# This config uses Starship, make sure you have it installed.
 # Trying to keep it simple, as always...
-# https://github.com/dsorcererdev/dotfiles  
+# https://github.com/dsrcr/dotfiles  
 
 # Variables
 set EDITOR 'nvim'
@@ -32,13 +32,6 @@ alias fixkeys='sudo pacman -Sy archlinux-keyring'
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"
 alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/config.fish"
 
-# Aliases: Arduino development
-alias acl='sudo arduino-cli'
-alias aclcompile='sudo arduino-cli compile --fqbn arduino:avr:uno'
-alias aclupload='sudo arduino-cli upload --port /dev/ttyACM0 --fqbn arduino:avr:uno'
-alias aserial='sudo screen /dev/ttyACM0'
-alias arduino='sudo arduino'
-
 # Aliases: Git
 alias gts='git status'
 alias gtc='git commit -m'
@@ -46,11 +39,7 @@ alias gpo='git push origin'
 alias gpl='git pull'
 alias gta='git add'
 
-# Aliases: Machile Learning
-alias octave='sudo octave --gui'
-
 # Aliases: JS
-
 alias lint='eslint .'
 alias fix='eslint --fix .'
 alias start='pnpm run start'

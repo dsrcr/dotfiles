@@ -1,32 +1,29 @@
-# ________     _________                        _____ .__    ____   
-# \______ \   /   _____/  ____   ____    ____ _/ ____\|__|  / ___\  
-#  |    |  \  \_____  \ _/ ___\ /  _ \  /    \\   __\ |  | / /_/  > 
-#  |    `   \ /        \\  \___(  <_> )|   |  \|  |   |  | \___  /  
-# /_______  //_______  / \___  >\____/ |___|  /|__|   |__|/_____/   
-#         \/         \/      \/             \/                      
-#
-# Minimalistic custom i3-gaps config
-# Trying to keep it simple, as always....
-# https://github.com/dsorcererdev/dotfiles  
+# ________     _________ 
+# \______ \   /   _____/
+#  |    |  \  \_____  \
+#  |    `   \ /        \  
+# /_______  //_______  /
+#         \/         \/
+# Works for i3 or i3-gaps
+# https://github.com/dsrcr/dotfiles  
 
-# Default modifier as Super key
+# Variables
 set $super Mod4
-
-# Only for older hardware
-set $terminal LIBGL_ALWAYS_SOFTWARE=1 kitty
+set $terminal kitty
 
 # Basic settings: font, disabling i3 window top bar, gaps size
 default_border pixel 1
 font pango:DejaVu Sans Mono 0
 exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/wallpaper
+# Disable it if you don't have picom
 exec --no-startup-id picom --config ~/repos/dotfiles/picom/picom.conf -b
 
 # Keybinds: Terminal based
 bindsym $super+Return exec --no-startup-id $terminal
 bindsym $super+Shift+Return exec --no-startup-id $terminal ranger
-bindsym $super+Shift+t exec --no-startup-id $terminal nvim ~/repos/token.md
 
 # Keybinds: GUI
+# Disable it if you don't have flameshot
 bindsym $super+Shift+s exec --no-startup-id flameshot gui
 
 # Keybinds: Rofi scripts
