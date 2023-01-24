@@ -17,7 +17,6 @@ end
 
 # starship prompt startup
 starship init fish | source
-pfetch
 
 
 # pnpm
