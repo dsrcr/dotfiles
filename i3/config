@@ -1,22 +1,12 @@
-# ________     _________ 
-# \______ \   /   _____/
-#  |    |  \  \_____  \
-#  |    `   \ /        \  
-# /_______  //_______  /
-#         \/         \/
-# Works for i3 or i3-gaps
 # https://github.com/dsrcr/dotfiles  
 
 # Variables
 set $super Mod4
-set $terminal kitty
+set $terminal st
 
 # Basic settings: font, disabling i3 window top bar, gaps size
 default_border pixel 1
-font pango:DejaVu Sans Mono 0
-exec --no-startup-id feh --bg-fill ~/.config/i3/wallpapers/wallpaper
-# Disable it if you don't have picom
-exec --no-startup-id picom --config ~/repos/dotfiles/picom/picom.conf -b
+# font pango:DejaVu Sans Mono 0
 exec --no-startup-id setxkbmap pl
 
 # Keybinds: Terminal based
