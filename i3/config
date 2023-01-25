@@ -6,15 +6,11 @@ set $terminal st
 
 # Basic settings: font, disabling i3 window top bar, gaps size
 default_border pixel 1
-# font pango:DejaVu Sans Mono 0
 exec --no-startup-id setxkbmap pl
 
 # Keybinds: Terminal based
 bindsym $super+Return exec --no-startup-id $terminal
 bindsym $super+Shift+Return exec --no-startup-id $terminal ranger
-
-for_window [ title="note_window"] floating enable
-bindsym $super+n exec $terminal /usr/bin/note -t note_window
 
 # Keybinds: GUI
 # Disable it if you don't have flameshot
@@ -22,8 +18,8 @@ bindsym $super+Shift+s exec --no-startup-id flameshot gui
 
 # Keybinds: Rofi scripts
 bindsym $super+d exec --no-startup-id rofi -show run
-bindsym $super+Shift+d exec --no-startup-id ~/.config/rofi/rofi-wifi-menu.sh
 bindsym $super+Shift+f exec --no-startup-id ~/.config/rofi/rofi-shutdown-menu
+bindsym $super+Shift+q exec poweroff
 
 # Keybinds: Windows
 bindsym $super+q kill
