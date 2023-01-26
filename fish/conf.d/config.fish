@@ -1,11 +1,3 @@
-# ________     _________                        _____ .__    ____   
-# \______ \   /   _____/  ____   ____    ____ _/ ____\|__|  / ___\  
-#  |    |  \  \_____  \ _/ ___\ /  _ \  /    \\   __\ |  | / /_/  > 
-#  |    `   \ /        \\  \___(  <_> )|   |  \|  |   |  | \___  /  
-# /_______  //_______  / \___  >\____/ |___|  /|__|   |__|/_____/   
-#         \/         \/      \/             \/                      
-# This config uses Starship, make sure you have it installed.
-# Trying to keep it simple, as always...
 # https://github.com/dsrcr/dotfiles  
 
 # Variables
@@ -25,7 +17,7 @@ alias p='paru'
 alias i='paru -S'
 alias grep='rg'
 alias find='fd'
-alias remove='sudo paru --remove'
+alias remove='paru --remove'
 alias fixkeys='sudo pacman -Sy archlinux-keyring'
 
 # Aliases: Edit dotfiles
@@ -36,11 +28,9 @@ alias editfish="$EDITOR ~/repos/dotfiles/fish/conf.d/config.fish"
 alias gts='git status'
 alias gtc='git commit -m'
 alias gpo='git push origin'
-alias gpl='git pull'
 alias gta='git add'
 
 # Aliases: JS
-alias lint='eslint .'
-alias fix='eslint --fix .'
-alias start='pnpm run start'
-alias pformat='prettier --write .'
+alias lint='eslint . | eslint --fix .'
+alias pf='prettier --write .'
+alias start='pnpm vite'
