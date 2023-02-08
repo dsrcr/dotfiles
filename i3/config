@@ -9,7 +9,7 @@ default_border pixel 1
 exec --no-startup-id setxkbmap pl
 
 # Keybinds: Terminal based
-bindsym $super+Return exec --no-startup-id $terminal
+bindsym $super+Return exec --no-startup-id $terminal tmux
 bindsym $super+Shift+Return exec --no-startup-id $terminal ranger
 
 # Keybinds: GUI
