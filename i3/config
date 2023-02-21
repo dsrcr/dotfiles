@@ -13,7 +13,6 @@ bindsym $super+Return exec --no-startup-id $terminal tmux
 bindsym $super+Shift+Return exec --no-startup-id $terminal ranger
 
 # Keybinds: GUI
-# Disable it if you don't have flameshot
 bindsym $super+Shift+s exec --no-startup-id flameshot gui
 
 # Keybinds: Rofi scripts
