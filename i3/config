@@ -2,7 +2,7 @@
 
 # Variables
 set $super Mod4
-set $terminal st
+set $terminal kitty
 
 # Basic settings: font, disabling i3 window top bar, gaps size
 default_border pixel 1
