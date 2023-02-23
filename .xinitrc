@@ -1,16 +1,5 @@
 #!/bin/sh
 
-# ________     _________                        _____ .__    ____   
-# \______ \   /   _____/  ____   ____    ____ _/ ____\|__|  / ___\  
-#  |    |  \  \_____  \ _/ ___\ /  _ \  /    \\   __\ |  | / /_/  > 
-#  |    `   \ /        \\  \___(  <_> )|   |  \|  |   |  | \___  /  
-# /_______  //_______  / \___  >\____/ |___|  /|__|   |__|/_____/   
-#         \/         \/      \/             \/                      
-#
-# Minimalistic X config
-# Trying to keep it simple, as always....
-# https://github.com/dsorcererdev/dotfiles 
-
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -39,4 +28,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+setxkbmap pl
 exec i3
