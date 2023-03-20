@@ -11,14 +11,12 @@ alias ls='exa -l --icons'
 alias la='exa -la --icons'
 alias v='nvim'
 alias r='ranger'
-alias n='pfetch'
 alias c='clear'
 alias p='paru'
-alias i='paru -S'
 alias grep='rg'
 alias find='fd'
 alias remove='paru --remove'
-alias fixkeys='sudo pacman -Sy archlinux-keyring'
+alias fixkeys='doas pacman -Sy archlinux-keyring'
 
 # Aliases: Edit dotfiles
 alias editi3="$EDITOR ~/repos/dotfiles/i3/config"

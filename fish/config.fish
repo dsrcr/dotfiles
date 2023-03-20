@@ -6,13 +6,9 @@ if status is-login
 end
 # Startx end
 
-# starship prompt startup
-starship init fish | source
-# startship end
+zoxide init fish | source
 
 # pnpm
 set -gx PNPM_HOME "/home/ds/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
-
-setxkbmap pl
