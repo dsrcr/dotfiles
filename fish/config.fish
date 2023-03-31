@@ -8,7 +8,22 @@ end
 
 zoxide init fish | source
 
+set EDITOR 'nvim'
+set RUST_BACKTRACE 1
+
 # pnpm
 set -gx PNPM_HOME "/home/ds/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
+
+# android sdk
+set -gx ANDROID_HOME "/home/ds/Android/Sdk"
+set -gx PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# java sdk 
+
+set -gx ANDROID_HOME "/home/ds/Android/Sdk"
+set -gx PATH $PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+set -gx JAVA_HOME "/usr/lib/jvm/java-19-openjdk"
+set -gx PATH $PATH:$JAVA_HOME
