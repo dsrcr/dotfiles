@@ -30,5 +30,5 @@ fi
 
 picom -b &
 ~/.fehbg &
-# exec dbus-launch --exit-with-session /usr/local/bin/dwm
-exec dbus-launch --exit-with-session leftwm
+exec dbus-launch --exit-with-session /usr/local/bin/dwm
+# exec dbus-launch --exit-with-session leftwm
