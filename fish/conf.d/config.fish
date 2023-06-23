@@ -13,6 +13,8 @@ alias c='clear'
 alias p='paru'
 alias grep='rg'
 alias find='fd'
+alias j='joshuto'
+alias h='htop'
 
 # Aliases: Git
 alias gts='git status'

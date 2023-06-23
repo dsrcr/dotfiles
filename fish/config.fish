@@ -11,6 +11,10 @@ zoxide init fish | source
 set EDITOR 'nvim'
 set RUST_BACKTRACE 1
 
+
+set -gx PYTHON "/home/ds/.local/bin"
+set -gx PATH $PATH:$PYTHON
+
 # pnpm
 set -gx PNPM_HOME "/home/ds/.local/share/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
