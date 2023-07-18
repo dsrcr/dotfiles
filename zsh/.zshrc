@@ -29,7 +29,9 @@ export EDITOR=nvim
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
+
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+  # from here you can choose if you want to run X or wayland
   # exec startx &> /dev/null
   exec dbus-run-session sway &> /dev/null
 fi
@@ -55,10 +57,10 @@ alias gpo="git push origin"
 alias pull="git pull origin"
 alias log="git log"
 
-
 export PNPM_HOME="/home/ds/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+export PATH="$HOME/.cargo/bin:$PATH"
