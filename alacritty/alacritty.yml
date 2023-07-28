@@ -1,4 +1,5 @@
-
+import:
+ - ~/.config/alacritty/themes/themes/gruvbox.yaml
 env:
   TERM: xterm-256color
 window:
@@ -18,39 +19,10 @@ font:
   bold_italic:
     family: Fira Code
     style: Bold Italic
-  size: 12
+  size: 8
   offset:
     x: 0
     y: 1
-schemes:
-
-colors:
-  # Default colors
-  primary:
-    background: '0x282a36'
-    foreground: '0xf8f8f2'
-
-  # Normal colors
-  normal:
-    black:   '0x282a36'
-    red:     '0xff5555'
-    green:   '0x50fa7b'
-    yellow:  '0xf1fa8c'
-    blue:    '0x6272a4'
-    magenta: '0xbd93f9'
-    cyan:    '0x8be9fd'
-    white:   '0xbfbfbf'
-
-  # Bright colors
-  bright:
-    black:   '0x4d4d4d'
-    red:     '0xff6e6e'
-    green:   '0x69ff94'
-    yellow:  '0xffffa5'
-    blue:    '0x94a4ff'
-    magenta: '0xd6acff'
-    cyan:    '0xa4f7ff'
-    white:   '0xe6e6e6'
 key_bindings:
   - { key: V,         mods: Control|Shift, action: Paste                       }
   - { key: C,         mods: Control|Shift, action: Copy                        }

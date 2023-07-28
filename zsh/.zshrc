@@ -32,8 +32,8 @@ source $ZSH/oh-my-zsh.sh
 
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
   # from here you can choose if you want to run X or wayland
-  # exec startx &> /dev/null
-  exec dbus-run-session sway &> /dev/null
+  exec startx &> /dev/null
+  # exec dbus-run-session sway &> /dev/null
 fi
 
 alias ls="exa -l --icons"

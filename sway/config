@@ -1,5 +1,3 @@
-
-# ________     _________ 
 # \______ \   /   _____/
 #  |    |  \  \_____  \
 #  |----|   \ /        \  
@@ -11,11 +9,14 @@
 # Variables
 set $super Mod4
 set $terminal alacritty
+set $browser brave
+set $file_manager pcmanfm
 gaps inner 10
-input type:keyboard xkb_layout "pl"
-output "*" bg ~/Pictures/wallpaper fill
-exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+# input type:keyboard xkb_layout "pl"
+# output "*" bg ~/Pictures/wallpaper fill
+# exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+# exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec conky
 
 # Basic settings: font, disabling window top bar, gaps size
 default_border pixel 1
@@ -23,7 +24,14 @@ font pango:DejaVu Sans Mono 0
 
 # Keybinds: Terminal based
 bindsym $super+Return exec --no-startup-id $terminal
-bindsym $super+d exec --no-startup-id bemenu-run
+bindsym $super+Shift+Return exec $terminal -e "joshuto"
+# bindsym $super+d exec --no-startup-id bemenu-run
+bindsym $super+d exec --no-startup-id dmenu_run
+bindsym $super+b exec --no-startup-id $browser
+bindsym $super+e exec --no-startup-id $file_manager
+bindsym $super+m exec --no-startup-id pavucontrol
+bindsym $super+j exec --no-startup-id qjackctl
+bindsym $super+s exec --no-startup-id grim -g "$(slurp)"  
 
 # Keybinds: Windows
 bindsym $super+q kill
