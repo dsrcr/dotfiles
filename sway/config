@@ -8,7 +8,7 @@
 
 # Variables
 set $super Mod4
-set $terminal alacritty
+set $terminal ~/.cargo/bin/alacritty
 set $browser brave
 set $file_manager pcmanfm
 gaps inner 10
@@ -17,6 +17,7 @@ gaps inner 10
 # exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 # exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec conky
+exec pipewire-start.sh
 
 # Basic settings: font, disabling window top bar, gaps size
 default_border pixel 1

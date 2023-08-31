@@ -30,9 +30,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  done
  unset f
 fi
-
+lxpolkit &
 picom -b &
-fcitx5 -d &
+#fcitx5 -d &
+
 ~/.fehbg &
-# exec dbus-launch --exit-with-session leftwm
 exec dbus-run-session i3

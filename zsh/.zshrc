@@ -24,12 +24,17 @@ export QT_IM_MODULE="fcitx"
 export SDL_IM_MODULE="fcitx"
 export XMODIFIERS="@im=fcitx"
 
+# DOTFILE MANAGEMENT
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+
 # export QT_QPA_PLATFORMTHEME="qt5ct"
 export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_DESKTOP=sway
 export XDG_CURRENT_SESSION_DESKTOP=wayland
 export EDITOR=nvim
-# export BUILDDIR=/tmp/makepkg
+export BUILDDIR=/tmp/makepkg
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
@@ -49,8 +54,10 @@ alias p="paru"
 alias j="joshuto"
 alias h="htop"
 alias n="fm6000"
-alias sudo="doas"
 alias latexmk="latex-mk"
+alias sudo="doas"
+alias poweroff="doas poweroff"
+alias reboot="doas reboot"
 
 alias pf="prettier --write ."
 
@@ -61,10 +68,12 @@ alias gpo="git push origin"
 alias pull="git pull origin"
 alias log="git log"
 
-export PNPM_HOME="/home/ds/.local/share/pnpm"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/fajw/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-
-export PATH="$HOME/.cargo/bin:$PATH"
+# pnpm end
