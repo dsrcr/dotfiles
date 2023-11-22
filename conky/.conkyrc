@@ -13,7 +13,6 @@ conky.config = {
 	alignment = 'top_right',		            -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
 	gap_x = 50,								-- pixels between right or left border
 	gap_y = 70,								-- pixels between bottom or left border
-
     -- Size
     minimum_height = 300,						-- minimum height of window
 	minimum_width = 450,						-- minimum width of window
@@ -52,7 +51,6 @@ conky.config = {
 	use_spacer = 'none',						-- adds spaces around certain objects to align - default none
 	use_xft = true,								-- xft font - anti-aliased font
 	xftalpha = 1,								-- alpha of the xft font - between 0-1
-
 	--Windows
 	own_window = true,							-- create your own window to draw
 	own_window_argb_value = 255,			    -- real transparency - composite manager required 0-255
@@ -74,7 +72,6 @@ conky.text = [[
 ${alignc}${color0}${font2}${time %H:%M}${font}
 ${voffset 6}${alignc}${color0}${font3}${time %b %d, %Y}${font}${color}
 ${color1}${hr}${color0}
--- ${color0}${execpi 300 curl wttr.in?T0 --silent --max-time 3}
 ${color3}Uptime:$color3 $uptime
 ${color3}Battery: ${battery_percent BAT0}% ${alignr}${battery_bar 8,70 BAT0}
 ${voffset 18}${goto 12}${color3}CPU${goto 50}$cpu%
